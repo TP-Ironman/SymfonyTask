@@ -7,9 +7,9 @@ Author - Thaiveena Parthasarathy
   
 ## Technologies:
 
-Symfony framework - Version 4.3.4
-PHP - Version 7.1.29
-HTML, CSS.
+*Symfony framework - Version 4.3.4
+*PHP - Version 7.1.29
+*HTML, CSS.
 
 ## Contents:
 
