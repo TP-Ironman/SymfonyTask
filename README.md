@@ -17,20 +17,20 @@ HTML, CSS.
 * HomePageController.php
 * ExistingEntrepriseController.php
 * LogoutController.php
-NewEntrepriseController.php
-ProfileViewController.php
+* NewEntrepriseController.php
+* ProfileViewController.php
 
 ### Templates:
-existing_entreprise/index.html.twig
-hello.html.twig (100%)
-logout/index.html.twig
-new_entreprise/index.html.twig
-profile_view/index.html.twig
+* existing_entreprise/index.html.twig
+* hello.html.twig (100%)
+* logout/index.html.twig
+* new_entreprise/index.html.twig
+* profile_view/index.html.twig
 
 ### Images:
-LOGO_HP_RVB_HD.png
-logout.png
-profile.png
+* LOGO_HP_RVB_HD.png
+* logout.png
+* profile.png
 
 
 
