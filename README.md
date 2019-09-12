@@ -14,9 +14,9 @@ HTML, CSS.
 ## Contents:
 
 ### Controllers:
-HomePageController.php
-ExistingEntrepriseController.php
-LogoutController.php
+* HomePageController.php
+* ExistingEntrepriseController.php
+* LogoutController.php
 NewEntrepriseController.php
 ProfileViewController.php
 
