@@ -1,1 +1,193 @@
-Hi This is the first page!!!
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello!! This is Symfony.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <style>
+            .next {
+                right:0;
+                margin-right: 50px;
+            }
+
+
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 170px;
+                z-index: 1;
+                border: solid;
+            }
+
+
+            .Subheading {
+                position: absolute;
+                background-color: rgb(0,0,234);
+                width: 100vw;
+                border: solid;
+                top:100px;
+            }
+
+            .Subhd {
+                color: white;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 60px;  
+                font-family:"Comic Sans MS";
+                font-size: 30px;
+            }
+
+            .Entreprise{
+                position: relative;
+                padding-top: 6em;
+                margin-top: 70px;
+            }
+
+            .SubEntreprise{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .button{
+                border-radius: 12px;
+                background-color: white;
+                color: black;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                border:groove;
+                font-family:"Comic Sans MS";
+            }
+
+            .button:hover
+            {
+                border-color: rgb(255,0,133);
+                color: rgb(255,0,133);
+            }
+
+            .button:active{
+                color: white;
+                background-color: rgb(255,0,133);
+            }
+            
+            .Page{
+                position: relative;
+                padding-top: 8em;
+                margin-top: 70px;
+            }
+
+            .SubPage{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .buttonPage{
+                border-radius: 6px;
+                background-color: lightgrey;
+                color: black;
+                padding: 10px 70px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                border:groove;
+                font-family:"Comic Sans MS";
+            }
+
+            .buttonPage1{
+                position:absolute;
+                left:15%;
+            }
+            .buttonPage2{
+                position:absolute;
+                right:15%;
+            }
+
+            .buttonPage:hover
+            {
+                border-color: rgb(0,0,234);
+                color: rgb(0,0,234);
+            }
+
+            .buttonPage:active{
+                color: white;
+                background-color: rgb(0,0,234);
+            }
+
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {background-color: grey;}
+            .dropdown:hover .dropdown-content {display: block;}
+
+        </style>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-white">
+            <div class="container">
+                <a class="nav-link" href="/home_page">
+                <img src="{{ asset('images/LOGO_HP_RVB_HD.png') }}" width="150">
+                </a>
+                <div class="dropdown next">
+                    <img src="{{ asset('images/profile.png') }}" width="40">
+                    <div class="dropdown-content">
+                       <a href="/account/profile"><img src="{{ asset('images/profile.png') }}" width="15">&nbsp;Mon profil</a>
+                        <a href="/account/logout"><img src="{{ asset('images/logout.png') }}" width="15">&nbsp;Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="Subheading">
+            <div class="Subhd">
+            <p>Associer au projets</p>
+            </div>
+        </div>
+    </header>
+    <main role="main" class="container main">
+        <div class="Entreprise">
+            <div class="SubEntreprise">
+                <button class="button" onclick="location.href='/entreprise/existante';">Une entreprise existante</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="button" onclick="location.href='/entreprise/nouvelle';">Une nouvelle entreprise</button>
+            </div>
+        </div>
+        <div class="Page">
+            <div class="SubPage">
+                <button class="buttonPage buttonPage1" onclick="location.href='/';">Page précédente</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="buttonPage buttonPage2" onclick="location.href='/';">Page suivante</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
